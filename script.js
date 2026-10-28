@@ -46,18 +46,9 @@ for (let i = 0; i < ratings.length; i++) {
         label = "보통";
     }
 
-    console.log(
-        titles[i] + " (" + years[i] + "): " +
-        ratings[i] + " - " + label
-    );
+    console.log(titles[i] + " (" + years[i] + "): " + ratings[i] + " " + label);
 }
-
-// 6. 내 영화로 바꾸고 요약 한 줄
-titles[0] = "내 영화";
-ratings[0] = 9.0;
-years[0] = 2026;
 
 const avgText = average.toFixed(1);
 const best = titles[maxIndex];
-
 alert(`내 영화 ${titles.length}편, 평균 ${avgText}점, 최고는 ${best}`);
